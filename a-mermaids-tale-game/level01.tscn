@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://tcdqusjoh8yg"]
+
+[ext_resource type="Texture2D" uid="uid://tof8tmno53s3" path="res://mermaid icon.png" id="1_jrmpe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_242oy"]
+size = Vector2(1.2, 1.2)
+
+[node name="Level01Root" type="Node2D" unique_id=1139338808]
+
+[node name="Mermaid" type="CharacterBody2D" parent="." unique_id=1158364263]
+
+[node name="MermaidIcon" type="Sprite2D" parent="Mermaid" unique_id=464784492]
+position = Vector2(530, 329)
+scale = Vector2(1.2177923, 1.2864456)
+texture = ExtResource("1_jrmpe")
+
+[node name="MermaidBox" type="CollisionShape2D" parent="Mermaid" unique_id=1221366467]
+shape = SubResource("RectangleShape2D_242oy")
