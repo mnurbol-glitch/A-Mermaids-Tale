@@ -3,17 +3,21 @@
 [ext_resource type="Script" uid="uid://bqjel4hfkctdd" path="res://scripts/game_madina.gd" id="1_h74fe"]
 [ext_resource type="PackedScene" uid="uid://cvy6qv1orcddt" path="res://scenes/player.tscn" id="2_iw4op"]
 [ext_resource type="PackedScene" uid="uid://b3vr4cml6scqh" path="res://scenes/trident.tscn" id="3_iw4op"]
+[ext_resource type="PackedScene" uid="uid://dgkac0hhan15u" path="res://scenes/enemy.tscn" id="4_nfoa1"]
 
 [node name="Game_lvl2_Madina" type="Node2D" unique_id=1845959821]
 script = ExtResource("1_h74fe")
 
 [node name="Player" parent="." unique_id=118782493 instance=ExtResource("2_iw4op")]
-position = Vector2(1242, 580)
+position = Vector2(817, 894)
 
 [node name="PlayerSpawnPos" type="Marker2D" parent="." unique_id=1755339875]
 position = Vector2(810, 900)
 
 [node name="Trident" parent="." unique_id=1662651136 instance=ExtResource("3_iw4op")]
-position = Vector2(563, 988)
+position = Vector2(826, 668)
 
 [node name="TridentContainer" type="Node2D" parent="." unique_id=1696181520]
+
+[node name="Enemy" parent="." unique_id=1823678090 instance=ExtResource("4_nfoa1")]
+position = Vector2(617, 361)

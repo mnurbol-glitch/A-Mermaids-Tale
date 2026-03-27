@@ -5,6 +5,7 @@
 
 [node name="Player" type="CharacterBody2D" unique_id=118782493 groups=["player"]]
 scale = Vector2(0.3, 0.3)
+collision_mask = 2
 motion_mode = 1
 script = ExtResource("1_g2els")
 

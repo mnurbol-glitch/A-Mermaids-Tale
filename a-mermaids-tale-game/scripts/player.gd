@@ -1,4 +1,4 @@
-extends CharacterBody2D
+class_name Player extends CharacterBody2D
 
 signal trident_shot(trident_scene, location)
 
@@ -26,3 +26,6 @@ func _physics_process(_delta):
 	
 func shoot():
 	trident_shot.emit(trident_scene, muzzle.global_position)
+	
+func die():
+		queue_free()
