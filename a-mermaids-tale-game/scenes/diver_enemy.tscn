@@ -4,18 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://cybaku785f4mv" path="res://assets/Subject 2 copy.png" id="2_5ovsw"]
 
 [node name="DiverEnemy" unique_id=1823678090 instance=ExtResource("1_x15ja")]
-speed = 400
+speed = 500
 points = 200
 
 [node name="Sprite2D" parent="." index="0" unique_id=286168872]
-position = Vector2(1, 3.5527137e-15)
 rotation = -1.5707964
-scale = Vector2(0.35, 0.35)
+scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_5ovsw")
 
 [node name="CollisionPolygon2D" parent="." index="1" unique_id=1924963564]
-position = Vector2(0, 4)
-polygon = PackedVector2Array(-28, 37, -64, 0, -25, 11, -19, -16, -7, -40, 6, -74, -10, -82, -22, -110, 13, -90, 37, -91, 12, -71, 33, -25, 37, 12, 64, 11, 39, 23, 61, 28, 37, 37, 17, 58, 4, 99, -5, 108, -15, 99)
-
-[node name="VisibleOnScreenNotifier2D" parent="." index="2" unique_id=743832035]
-position = Vector2(-10, -140)
+position = Vector2(1, 0)
+polygon = PackedVector2Array(-17, 24, -36, 1, -16, 9, -10, -14, 1, -36, -3, -45, -12, -52, -14, -63, -2, -57, 6, -51, 19, -52, 7, -37, 21, 7, 35, 8, 25, 14, 33, 19, 21, 21, 3, 57, -3, 67, -10, 62, -17, 41)

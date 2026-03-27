@@ -26,6 +26,7 @@ position = Vector2(810, 900)
 
 [node name="Trident" parent="." unique_id=1662651136 instance=ExtResource("3_iw4op")]
 position = Vector2(826, 668)
+speed = null
 
 [node name="TridentContainer" type="Node2D" parent="." unique_id=1696181520]
 
