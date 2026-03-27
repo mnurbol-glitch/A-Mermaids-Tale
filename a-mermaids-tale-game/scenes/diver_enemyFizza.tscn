@@ -13,5 +13,5 @@ scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_olvia")
 
 [node name="CollisionPolygon2D" parent="." index="1" unique_id=1924963564]
-position = Vector2(1, 0)
+position = Vector2(-2, -12)
 polygon = PackedVector2Array(-17, 24, -36, 1, -16, 9, -10, -14, 1, -36, -3, -45, -12, -52, -14, -63, -2, -57, 6, -51, 19, -52, 7, -37, 21, 7, 35, 8, 25, 14, 33, 19, 21, 21, 3, 57, -3, 67, -10, 62, -17, 41)

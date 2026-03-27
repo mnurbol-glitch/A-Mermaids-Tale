@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://btcpkxq4ma2xx"]
 
 [ext_resource type="Script" uid="uid://cctuns8gyooxo" path="res://scripts/enemy.gd" id="1_limwj"]
-[ext_resource type="Texture2D" uid="uid://qxg8w4rnr2cf" path="res://assets/pngimg.com - mermaid_PNG3.png" id="2_limwj"]
+[ext_resource type="Texture2D" uid="uid://b1q33t50e7ic" path="res://assets/enemy.png" id="2_limwj"]
 
 [node name="Enemy" type="Area2D" unique_id=1823678090]
 collision_layer = 2
@@ -9,13 +9,14 @@ collision_mask = 5
 script = ExtResource("1_limwj")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=286168872]
-position = Vector2(8, 9)
-rotation = 1.5707964
-scale = Vector2(0.022241084, 0.022241084)
+position = Vector2(20, 3)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_limwj")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1924963564]
-polygon = PackedVector2Array(-13, 25, -20, 10, -29, -10, -30, -21, -29, -36, -11, -43, 2, -41, 7, -37, 9, -54, 12, -87, 26, -69, 32, -39, 25, -17, 14, -16, -3, -16, 9, 15, 16, 37, 13, 69, 8, 85, 0, 86, -6, 73)
+position = Vector2(20.852816, -17.449076)
+scale = Vector2(1.3575444, 1.2054834)
+polygon = PackedVector2Array(-140.02972, -10.809252, -55.274887, -29.101831, -38.32392, -15.798138, -54.537888, -31.596273, -17.687963, -59.866623, -16.950964, -62.36107, 2, -41, 7, -37, -23.58395, -64.02403, 4.4219913, -71.507355, 28.742943, -63.19255, 14.73997, -39.079605, 58.959885, 3.325924, 26.531948, -21.618504, 53.063892, -0.83148193, 131.92273, 99.77771, 73.699844, 106.42956, 16, 37, 13, 69, 8, 85, 0, 86, -103.179794, 66.51848)
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=743832035]
 position = Vector2(-10, -125)
