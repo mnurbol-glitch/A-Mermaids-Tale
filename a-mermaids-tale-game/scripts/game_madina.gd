@@ -18,6 +18,6 @@ func _process(_delta):
 		get_tree().reload_current_scene()
 
 func _on_player_trident_shot(trident_scene, location):
-	var trident = trident_scene.instatiate()
+	var trident = trident_scene.instantiate()
 	trident.global_position = location
 	trident_container.add_child(trident)
