@@ -3,14 +3,21 @@ extends CharacterBody2D
 signal trident_shot(trident_scene, location)
 
 @export var speed = 600
+@export var rate_of_fire := 0.2
 
 @onready var muzzle = $Muzzle
 
 var trident_scene = preload("res://scenes/trident.tscn")
 
+var shoot_cd := false
+
 func _process(_delta):
-	if Input.is_action_just_pressed("shoot"):
-		shoot()
+	if Input.is_action_pressed("shoot"):
+		if !shoot_cd:
+			shoot_cd = true
+			shoot()
+			await get_tree().create_timer(rate_of_fire).timeout
+			shoot_cd = false
 
 func _physics_process(_delta):
 	var direction = Vector2(Input.get_axis("move_left", "move_right"), Input.get_axis("move_up", "move_down"))
