@@ -13,6 +13,21 @@ corner_radius_bottom_left = 100
 font = ExtResource("1_iwahs")
 font_size = 75
 
+[sub_resource type="LabelSettings" id="LabelSettings_iwahs"]
+font = ExtResource("1_iwahs")
+font_size = 50
+
+[sub_resource type="LabelSettings" id="LabelSettings_jw6e5"]
+font = ExtResource("1_iwahs")
+font_size = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wa2qn"]
+bg_color = Color(0.88521683, 0.5589314, 0.19266084, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
 [node name="GameOverScreen" type="Control" unique_id=577975118]
 layout_mode = 3
 anchors_preset = 15
@@ -61,14 +76,52 @@ label_settings = SubResource("LabelSettings_61w2s")
 
 [node name="HighScore" type="Label" parent="Panel" unique_id=1440444997]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = 8
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
-offset_left = -225.0
-offset_top = 85.0
-offset_right = 225.0
-offset_bottom = 208.0
+anchor_bottom = 0.5
+offset_left = -320.5
+offset_top = -98.5
+offset_right = 320.5
+offset_bottom = 24.5
 grow_horizontal = 2
-text = "Game Over
-"
-label_settings = SubResource("LabelSettings_61w2s")
+grow_vertical = 2
+text = "HIGHEST SCORE: 999900"
+label_settings = SubResource("LabelSettings_iwahs")
+horizontal_alignment = 1
+
+[node name="Score" type="Label" parent="Panel" unique_id=1636339165]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -319.5
+offset_top = 21.49997
+offset_right = 321.5
+offset_bottom = 144.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "HIGHEST SCORE: 999900"
+label_settings = SubResource("LabelSettings_jw6e5")
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="Panel" unique_id=67005633]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -174.8667
+offset_top = -177.80164
+offset_right = 174.8667
+offset_bottom = -72.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_iwahs")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxFlat_wa2qn")
+text = "MENU"
