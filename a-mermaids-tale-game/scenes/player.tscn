@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cvy6qv1orcddt"]
 
 [ext_resource type="Texture2D" uid="uid://qxg8w4rnr2cf" path="res://assets/pngimg.com - mermaid_PNG3.png" id="1_3vyb7"]
-[ext_resource type="Script" uid="uid://cnmwjf0mle5yn" path="res://scenes/scripts/player.gd" id="1_g2els"]
+[ext_resource type="Script" uid="uid://cnmwjf0mle5yn" path="res://scripts/player.gd" id="1_g2els"]
 
 [node name="Player" type="CharacterBody2D" unique_id=118782493]
 motion_mode = 1

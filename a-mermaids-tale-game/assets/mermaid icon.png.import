@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tof8tmno53s3"
-path="res://.godot/imported/mermaid icon.png-a98d11af89c9c41847326cb167832f69.ctex"
+path="res://.godot/imported/mermaid icon.png-60649243f4537ae6b9f0995d66a032ca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mermaid icon.png"
-dest_files=["res://.godot/imported/mermaid icon.png-a98d11af89c9c41847326cb167832f69.ctex"]
+source_file="res://assets/mermaid icon.png"
+dest_files=["res://.godot/imported/mermaid icon.png-60649243f4537ae6b9f0995d66a032ca.ctex"]
 
 [params]
 
