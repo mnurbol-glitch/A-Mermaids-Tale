@@ -13,5 +13,7 @@ position = Vector2(1242, 580)
 [node name="PlayerSpawnPos" type="Marker2D" parent="." unique_id=1755339875]
 position = Vector2(810, 900)
 
-[node name="Area2D" parent="." unique_id=1662651136 instance=ExtResource("3_iw4op")]
+[node name="Trident" parent="." unique_id=1662651136 instance=ExtResource("3_iw4op")]
 position = Vector2(563, 988)
+
+[node name="TridentContainer" type="Node2D" parent="." unique_id=1696181520]

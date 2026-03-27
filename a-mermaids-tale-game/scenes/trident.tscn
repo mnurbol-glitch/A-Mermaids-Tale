@@ -7,7 +7,7 @@
 radius = 13.0
 height = 92.0
 
-[node name="Area2D" type="Area2D" unique_id=1662651136]
+[node name="Trident" type="Area2D" unique_id=1662651136]
 script = ExtResource("1_8jqlw")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=433047925]
@@ -22,3 +22,5 @@ shape = SubResource("CapsuleShape2D_0v4q8")
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=771401042]
 position = Vector2(-4, 27)
 rect = Rect2(-10, -10, 30, 20)
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
