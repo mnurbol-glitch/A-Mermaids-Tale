@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b3vr4cml6scqh"]
+
+[ext_resource type="Texture2D" uid="uid://ddtyo2cbyg2kj" path="res://assets/trident.png" id="1_557qm"]
+[ext_resource type="PackedScene" uid="uid://cvy6qv1orcddt" path="res://scenes/player.tscn" id="2_8jqlw"]
+
+[node name="Area2D" type="Area2D" unique_id=1662651136]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=433047925]
+position = Vector2(0, -135.99998)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_557qm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=709587514]
+
+[node name="Player" parent="." unique_id=118782493 instance=ExtResource("2_8jqlw")]
