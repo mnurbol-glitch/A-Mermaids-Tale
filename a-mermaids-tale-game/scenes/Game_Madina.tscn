@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dgkac0hhan15u" path="res://scenes/enemy.tscn" id="4_nfoa1"]
 [ext_resource type="PackedScene" uid="uid://bhhj2by12h0r8" path="res://scenes/diver_enemy.tscn" id="5_s53ro"]
 
-[node name="Game_lvl1_Fizza" type="Node2D" unique_id=1845959821]
+[node name="Game_lvl2_Madina" type="Node2D" unique_id=1845959821]
 script = ExtResource("1_h74fe")
 enemy_scenes = Array[PackedScene]([ExtResource("4_nfoa1"), ExtResource("5_s53ro")])
 
