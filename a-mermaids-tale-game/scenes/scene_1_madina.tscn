@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://h3jog54aue67"]
-
-[ext_resource type="Script" uid="uid://dc1g50paq6etg" path="res://scripts/scene_1_madina.gd" id="1_iqa25"]
-
-[node name="Level2-Madina" type="Node2D" unique_id=1845959821]
-script = ExtResource("1_iqa25")
