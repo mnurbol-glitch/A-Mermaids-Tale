@@ -5,7 +5,7 @@
 
 [sub_resource type="LabelSettings" id="LabelSettings_toqtt"]
 font = ExtResource("2_5ysmq")
-font_size = 70
+font_size = 80
 
 [node name="HUD" type="Control" unique_id=841911485]
 layout_mode = 3
