@@ -5,6 +5,7 @@
 
 [node name="DiverEnemy" unique_id=1823678090 instance=ExtResource("1_x15ja")]
 speed = 500
+points = 200
 
 [node name="Sprite2D" parent="." index="0" unique_id=286168872]
 rotation = -1.5707964
