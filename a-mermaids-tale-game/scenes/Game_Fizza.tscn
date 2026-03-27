@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dq73kerebyr5x"]
+
+[ext_resource type="Script" uid="uid://bqjel4hfkctdd" path="res://scripts/game_madina.gd" id="1_ieoe5"]
+[ext_resource type="PackedScene" uid="uid://btcpkxq4ma2xx" path="res://scenes/enemyFizza.tscn" id="2_lkghy"]
+[ext_resource type="PackedScene" uid="uid://b2u1kmt4p3cd4" path="res://scenes/hud.tscn" id="4_oxrx0"]
+[ext_resource type="PackedScene" uid="uid://8mjbxi8722uj" path="res://scenes/game_over_screen.tscn" id="5_f4ixe"]
+[ext_resource type="PackedScene" uid="uid://cvy6qv1orcddt" path="res://scenes/player.tscn" id="6_m1nlo"]
+[ext_resource type="PackedScene" uid="uid://b3vr4cml6scqh" path="res://scenes/trident.tscn" id="7_5uomi"]
+
+[node name="Game_lvl2_Fizza" type="Node2D" unique_id=1845959821]
+script = ExtResource("1_ieoe5")
+enemy_scenes = Array[PackedScene]([ExtResource("2_lkghy")])
+
+[node name="UILayer" type="CanvasLayer" parent="." unique_id=1787005062]
+
+[node name="HUD" parent="UILayer" unique_id=841911485 instance=ExtResource("4_oxrx0")]
+
+[node name="GameOverScreen" parent="UILayer" unique_id=577975118 instance=ExtResource("5_f4ixe")]
+
+[node name="EnemySpawnTimer" type="Timer" parent="." unique_id=1525480864]
+autostart = true
+
+[node name="Player" parent="." unique_id=118782493 instance=ExtResource("6_m1nlo")]
+position = Vector2(817, 894)
+
+[node name="PlayerSpawnPos" type="Marker2D" parent="." unique_id=1755339875]
+position = Vector2(810, 900)
+
+[node name="Trident" parent="." unique_id=1662651136 instance=ExtResource("7_5uomi")]
+position = Vector2(826, 668)
+speed = null
+
+[node name="TridentContainer" type="Node2D" parent="." unique_id=1696181520]
+
+[node name="EnemyContainer" type="Node2D" parent="." unique_id=541133060]
+
+[connection signal="timeout" from="EnemySpawnTimer" to="." method="_on_enemy_spawn_timer_timeout"]
