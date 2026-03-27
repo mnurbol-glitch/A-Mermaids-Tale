@@ -1,10 +1,13 @@
 [gd_scene format=3 uid="uid://h3jog54aue67"]
 
-[ext_resource type="Script" uid="uid://dc1g50paq6etg" path="res://scripts/scene_1_madina.gd" id="1_h74fe"]
+[ext_resource type="Script" uid="uid://bqjel4hfkctdd" path="res://scripts/game_madina.gd" id="1_h74fe"]
 [ext_resource type="PackedScene" uid="uid://cvy6qv1orcddt" path="res://scenes/player.tscn" id="2_iw4op"]
 
-[node name="Level2-Madina" type="Node2D" unique_id=1845959821]
+[node name="Game_lvl2_Madina" type="Node2D" unique_id=1845959821]
 script = ExtResource("1_h74fe")
 
 [node name="Player" parent="." unique_id=118782493 instance=ExtResource("2_iw4op")]
-position = Vector2(824, 603)
+position = Vector2(1242, 580)
+
+[node name="PlayerSpawnPos" type="Marker2D" parent="." unique_id=1755339875]
+position = Vector2(810, 900)
