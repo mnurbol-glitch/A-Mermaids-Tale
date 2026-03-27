@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://8mjbxi8722uj"]
 
+[ext_resource type="Script" uid="uid://cvyf0o2a112sq" path="res://scripts/game_over_screen.gd" id="1_61w2s"]
 [ext_resource type="FontFile" uid="uid://dhinf5ol0usek" path="res://assets/waltographUI.ttf" id="1_iwahs"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4vnjk"]
@@ -35,6 +36,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_61w2s")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1854486487]
 layout_mode = 1
@@ -108,7 +110,7 @@ text = "HIGHEST SCORE: 999900"
 label_settings = SubResource("LabelSettings_jw6e5")
 horizontal_alignment = 1
 
-[node name="Button" type="Button" parent="Panel" unique_id=67005633]
+[node name="RestartButton" type="Button" parent="Panel" unique_id=67005633]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -125,3 +127,5 @@ theme_override_fonts/font = ExtResource("1_iwahs")
 theme_override_font_sizes/font_size = 80
 theme_override_styles/normal = SubResource("StyleBoxFlat_wa2qn")
 text = "MENU"
+
+[connection signal="pressed" from="Panel/RestartButton" to="." method="_on_restart_button_pressed"]

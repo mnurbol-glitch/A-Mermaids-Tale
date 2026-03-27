@@ -1,6 +1,7 @@
 class_name Player extends CharacterBody2D
 
 signal trident_shot(trident_scene, location)
+signal killed
 
 @export var speed = 600
 @export var rate_of_fire := 0.2
@@ -30,4 +31,5 @@ func shoot():
 	trident_shot.emit(trident_scene, muzzle.global_position)
 	
 func die():
-		queue_free()
+	killed.emit()
+	queue_free()

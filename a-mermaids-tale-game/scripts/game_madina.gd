@@ -7,6 +7,7 @@ extends Node2D
 @onready var timer = $EnemySpawnTimer
 @onready var enemy_container = $EnemyContainer
 @onready var hud = $UILayer/HUD
+@onready var gos = $UILayer/GameOverScreen
 
 var player = null
 var score := 0:
@@ -20,6 +21,7 @@ func _ready():
 	assert(player!=null)
 	player.global_position = player_spawn_pos.global_position
 	player.trident_shot.connect(_on_player_trident_shot)
+	player.killed.connect(_on_player_killed)
 	
 func _process(_delta):
 	if Input.is_action_just_pressed("quit"):
@@ -41,3 +43,7 @@ func _on_enemy_spawn_timer_timeout() -> void:
 func _on_enemy_killed(points):
 	score += points
 	print(score)
+	
+func _on_player_killed():
+	await get_tree().create_timer(1.5).timeout
+	gos.visible = true

@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b3vr4cml6scqh" path="res://scenes/trident.tscn" id="3_iw4op"]
 [ext_resource type="PackedScene" uid="uid://b2u1kmt4p3cd4" path="res://scenes/hud.tscn" id="4_cdrme"]
 [ext_resource type="PackedScene" uid="uid://dgkac0hhan15u" path="res://scenes/enemyMadina.tscn" id="4_nfoa1"]
+[ext_resource type="PackedScene" uid="uid://8mjbxi8722uj" path="res://scenes/game_over_screen.tscn" id="5_ekglo"]
 [ext_resource type="PackedScene" uid="uid://bhhj2by12h0r8" path="res://scenes/diver_enemyMadina.tscn" id="5_s53ro"]
 
 [node name="Game_lvl1_Madina" type="Node2D" unique_id=1845959821]
@@ -14,6 +15,9 @@ enemy_scenes = Array[PackedScene]([ExtResource("4_nfoa1"), ExtResource("5_s53ro"
 [node name="UILayer" type="CanvasLayer" parent="." unique_id=1787005062]
 
 [node name="HUD" parent="UILayer" unique_id=841911485 instance=ExtResource("4_cdrme")]
+
+[node name="GameOverScreen" parent="UILayer" unique_id=577975118 instance=ExtResource("5_ekglo")]
+visible = false
 
 [node name="EnemySpawnTimer" type="Timer" parent="." unique_id=1525480864]
 autostart = true
