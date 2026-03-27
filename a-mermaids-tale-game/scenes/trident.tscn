@@ -1,15 +1,24 @@
 [gd_scene format=3 uid="uid://b3vr4cml6scqh"]
 
+[ext_resource type="Script" uid="uid://dgocj5tr87f4q" path="res://scripts/trident.gd" id="1_8jqlw"]
 [ext_resource type="Texture2D" uid="uid://ddtyo2cbyg2kj" path="res://assets/trident.png" id="1_557qm"]
-[ext_resource type="PackedScene" uid="uid://cvy6qv1orcddt" path="res://scenes/player.tscn" id="2_8jqlw"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0v4q8"]
+radius = 13.0
+height = 92.0
 
 [node name="Area2D" type="Area2D" unique_id=1662651136]
+script = ExtResource("1_8jqlw")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=433047925]
-position = Vector2(0, -135.99998)
-scale = Vector2(0.1, 0.1)
+position = Vector2(0, -46)
+scale = Vector2(0.08, 0.08)
 texture = ExtResource("1_557qm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=709587514]
+position = Vector2(0, -46)
+shape = SubResource("CapsuleShape2D_0v4q8")
 
-[node name="Player" parent="." unique_id=118782493 instance=ExtResource("2_8jqlw")]
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=771401042]
+position = Vector2(-4, 27)
+rect = Rect2(-10, -10, 30, 20)
