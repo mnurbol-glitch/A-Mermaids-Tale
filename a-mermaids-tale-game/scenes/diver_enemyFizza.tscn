@@ -1,17 +1,18 @@
 [gd_scene format=3 uid="uid://d1go4e6tp0a5l"]
 
 [ext_resource type="PackedScene" uid="uid://dgkac0hhan15u" path="res://scenes/enemyMadina.tscn" id="1_olvia"]
-[ext_resource type="Texture2D" uid="uid://djn3cnk240ia7" path="res://assets/icon.svg" id="2_olvia"]
+[ext_resource type="Texture2D" uid="uid://clcowtgh4jy4i" path="res://assets/diver_enemy.png" id="2_olvia"]
 
 [node name="DiverEnemy" unique_id=1823678090 instance=ExtResource("1_olvia")]
 speed = 500
 points = 200
 
 [node name="Sprite2D" parent="." index="0" unique_id=286168872]
-rotation = -1.5707964
-scale = Vector2(0.2, 0.2)
+position = Vector2(9.999985, 9.999992)
+rotation = 0.0
+scale = Vector2(0.24, 0.2475)
 texture = ExtResource("2_olvia")
 
 [node name="CollisionPolygon2D" parent="." index="1" unique_id=1924963564]
-position = Vector2(-2, -12)
-polygon = PackedVector2Array(-17, 24, -36, 1, -16, 9, -10, -14, 1, -36, -3, -45, -12, -52, -14, -63, -2, -57, 6, -51, 19, -52, 7, -37, 21, 7, 35, 8, 25, 14, 33, 19, 21, 21, 3, 57, -3, 67, -10, 62, -17, 41)
+position = Vector2(-2, -16)
+polygon = PackedVector2Array(-24, 72, -37, 59, -43, 55, -43, 38, -49, 25, -68, -5, -45, -47, -15, -69, 6, -66, 7, -65, 44, -44, 54, 1, 62, 5, 61, 12, 51, 21, 50, 31, 112, 79, 84, 121, -1, 94, -11, 95, -20, 75)
