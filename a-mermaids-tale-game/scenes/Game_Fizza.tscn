@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://8mjbxi8722uj" path="res://scenes/game_over_screen.tscn" id="5_f4ixe"]
 [ext_resource type="PackedScene" uid="uid://cvy6qv1orcddt" path="res://scenes/player.tscn" id="6_m1nlo"]
 [ext_resource type="PackedScene" uid="uid://b3vr4cml6scqh" path="res://scenes/trident.tscn" id="7_5uomi"]
+[ext_resource type="Texture2D" uid="uid://d2ux56ddhyi23" path="res://assets/backgroundFizza.webp" id="7_ieoe5"]
 
 [node name="Game_lvl2_Fizza" type="Node2D" unique_id=1845959821]
 script = ExtResource("1_ieoe5")
@@ -14,6 +15,8 @@ enemy_scenes = Array[PackedScene]([ExtResource("2_lkghy")])
 [node name="UILayer" type="CanvasLayer" parent="." unique_id=1787005062]
 
 [node name="HUD" parent="UILayer" unique_id=841911485 instance=ExtResource("4_oxrx0")]
+offset_right = 178.0
+offset_bottom = -82.0
 
 [node name="GameOverScreen" parent="UILayer" unique_id=577975118 instance=ExtResource("5_f4ixe")]
 visible = false
@@ -34,5 +37,13 @@ speed = null
 [node name="TridentContainer" type="Node2D" parent="." unique_id=1696181520]
 
 [node name="EnemyContainer" type="Node2D" parent="." unique_id=541133060]
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1891321812]
+repeat_size = Vector2(800, 515)
+
+[node name="backgroundFizza" type="Sprite2D" parent="Parallax2D" unique_id=1415839635]
+scale = Vector2(1.225926, 0.5375)
+texture = ExtResource("7_ieoe5")
+centered = false
 
 [connection signal="timeout" from="EnemySpawnTimer" to="." method="_on_enemy_spawn_timer_timeout"]
