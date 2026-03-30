@@ -106,7 +106,7 @@ offset_right = 321.5
 offset_bottom = 144.5
 grow_horizontal = 2
 grow_vertical = 2
-text = "HIGHEST SCORE: 999900"
+text = "current SCORE: 999900"
 label_settings = SubResource("LabelSettings_jw6e5")
 horizontal_alignment = 1
 
@@ -126,6 +126,6 @@ grow_vertical = 0
 theme_override_fonts/font = ExtResource("1_iwahs")
 theme_override_font_sizes/font_size = 80
 theme_override_styles/normal = SubResource("StyleBoxFlat_wa2qn")
-text = "MENU"
+text = "RESET"
 
 [connection signal="pressed" from="Panel/RestartButton" to="." method="_on_restart_button_pressed"]
