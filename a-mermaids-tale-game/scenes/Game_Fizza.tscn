@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://8mjbxi8722uj" path="res://scenes/game_over_screen.tscn" id="5_f4ixe"]
 [ext_resource type="PackedScene" uid="uid://cvy6qv1orcddt" path="res://scenes/player.tscn" id="6_m1nlo"]
 [ext_resource type="PackedScene" uid="uid://b3vr4cml6scqh" path="res://scenes/trident.tscn" id="7_5uomi"]
-[ext_resource type="Texture2D" uid="uid://d2ux56ddhyi23" path="res://assets/backgroundFizza.webp" id="7_ieoe5"]
+[ext_resource type="Texture2D" uid="uid://i0plxtfjhvqg" path="res://assets/backgroundFizza.jpeg" id="7_ieoe5"]
 
 [node name="Game_lvl2_Fizza" type="Node2D" unique_id=1845959821]
 script = ExtResource("1_ieoe5")
@@ -38,11 +38,18 @@ speed = null
 
 [node name="EnemyContainer" type="Node2D" parent="." unique_id=541133060]
 
-[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1891321812]
-repeat_size = Vector2(800, 515)
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1718381366]
 
-[node name="backgroundFizza" type="Sprite2D" parent="Parallax2D" unique_id=1415839635]
-scale = Vector2(1.225926, 0.5375)
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=417945214]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=2132472267]
+scale = Vector2(2.585, 2.585)
+texture = ExtResource("7_ieoe5")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=1923961138]
+position = Vector2(0, 931)
+scale = Vector2(2.585, 2.585)
 texture = ExtResource("7_ieoe5")
 centered = false
 

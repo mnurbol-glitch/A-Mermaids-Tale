@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2ux56ddhyi23"
-path="res://.godot/imported/backgroundFizza.webp-7f4991598c80f794cc6e4fa691c7c814.ctex"
+uid="uid://i0plxtfjhvqg"
+path="res://.godot/imported/backgroundFizza.jpeg-540450b3212c414a086fc8ef08ae1902.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/backgroundFizza.webp"
-dest_files=["res://.godot/imported/backgroundFizza.webp-7f4991598c80f794cc6e4fa691c7c814.ctex"]
+source_file="res://assets/backgroundFizza.jpeg"
+dest_files=["res://.godot/imported/backgroundFizza.jpeg-540450b3212c414a086fc8ef08ae1902.ctex"]
 
 [params]
 

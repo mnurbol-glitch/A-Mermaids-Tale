@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dgkac0hhan15u" path="res://scenes/enemyMadina.tscn" id="4_nfoa1"]
 [ext_resource type="PackedScene" uid="uid://8mjbxi8722uj" path="res://scenes/game_over_screen.tscn" id="5_ekglo"]
 [ext_resource type="PackedScene" uid="uid://bhhj2by12h0r8" path="res://scenes/diver_enemyMadina.tscn" id="5_s53ro"]
+[ext_resource type="Texture2D" uid="uid://b2dm5fww60esb" path="res://assets/IMG_4297.JPG" id="8_tbaos"]
 
 [node name="Game_lvl1_Madina" type="Node2D" unique_id=1845959821]
 script = ExtResource("1_h74fe")
@@ -35,5 +36,20 @@ speed = null
 [node name="TridentContainer" type="Node2D" parent="." unique_id=1696181520]
 
 [node name="EnemyContainer" type="Node2D" parent="." unique_id=541133060]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1208917141]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=2140463253]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=1912485973]
+scale = Vector2(2.857, 2.857)
+texture = ExtResource("8_tbaos")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=1671243220]
+position = Vector2(0, 1026)
+scale = Vector2(2.857, 2.857)
+texture = ExtResource("8_tbaos")
+centered = false
 
 [connection signal="timeout" from="EnemySpawnTimer" to="." method="_on_enemy_spawn_timer_timeout"]
